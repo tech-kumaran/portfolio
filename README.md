@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Modern React Portfolio
 
 A sleek, premium, and fully responsive portfolio website built with modern web technologies. This project showcases professional experience, skills, and projects with high-quality animations and a glassmorphic design.
@@ -67,3 +68,6 @@ A sleek, premium, and fully responsive portfolio website built with modern web t
 ## 📄 License
 
 This project is licensed under the MIT License.
+=======
+# portfolio
+>>>>>>> c831c03ac66719e1b83d875a289437e3cfe43d47
