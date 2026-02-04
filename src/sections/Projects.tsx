@@ -17,7 +17,7 @@ export function Projects() {
         "Improved performance, UX, and maintainability of production features",
       ],
       liveUrl: "https://app.qoruz.com/",
-      image: "/images/qoruz_app.png",
+      image: "/images/qoruz.png",
     },
     {
       title: "Qoruz Website – Marketing & Public Pages",
@@ -52,15 +52,76 @@ export function Projects() {
       title: "YouTube Clone",
       description:
         "A high-fidelity YouTube clone built for a seamless video streaming experience.",
-      tech: ["Next.js", "Tailwind CSS", "Redux", "YouTube API"],
+      tech: ["React.js", "Tailwind CSS", "Redux Toolkit", "YouTube API"],
       features: [
         "Integrated YouTube Data API for real-time video fetching and search",
         "Implemented complex state management using Redux for video playback",
         "Developed a responsive UI with Tailwind CSS",
         "Optimized performance with lazy loading and efficient API consumption",
       ],
-      liveUrl: "https://you-tube-clone-navy-sigma.vercel.app/",
-      image: "/images/youtube_clone.png",
+      liveUrl: "https://ytgamma.vercel.app/",
+      image: "/images/youtube.png",
+    },
+
+    {
+      title: "Todo Application",
+      description:
+        "A modern task management application focused on efficient state handling and clean UI.",
+      tech: ["React.js (Vite)", "JavaScript", "Redux Toolkit"],
+      features: [
+        "Create, update, delete, and complete tasks",
+        "Centralized state management using Redux Toolkit",
+        "Integrated Dummy JSON API to simulate backend operations",
+        "Reusable component architecture",
+        "Responsive and user-friendly UI",
+      ],
+      liveUrl: "https://todo-techkumaran.vercel.app/",
+      image: "/images/todo.png",
+    },
+    {
+      title: "Zomato Clone",
+      description:
+        "A frontend clone of the Zomato platform showcasing restaurant listings and food menus.",
+      tech: ["React.js", "TypeScript", "Redux Toolkit"],
+      features: [
+        "Restaurant and food item listing using dummy JSON data",
+        "Search and filter functionality",
+        "Global state management with Redux Toolkit",
+        "Type-safe implementation using TypeScript",
+        "Scalable and modular component structure",
+      ],
+      liveUrl: "https://zomato-techkumar.vercel.app",
+      image: "/images/zomoto.png",
+    },
+    {
+      title: "E-Commerce Product App",
+      description:
+        "An e-commerce product listing application built with Next.js and modern UI styling.",
+      tech: ["Next.js", "Tailwind CSS", "Redux Toolkit"],
+      features: [
+        "Product listing and product detail pages",
+        "State management using Redux Toolkit",
+        "Dummy JSON API integration for product data",
+        "Responsive UI built with Tailwind CSS",
+        "SEO-friendly and scalable Next.js architecture",
+      ],
+      liveUrl: "https://e-commerce-product-puce.vercel.app/",
+      image: "/images/ecommerce.png",
+    },
+    {
+      title: "Portfolio Website",
+      description:
+        "A modern and responsive developer portfolio website built using TypeScript, Vite, and Tailwind CSS to showcase projects, skills, and experience.",
+      tech: ["TypeScript", "Vite", "Tailwind CSS"],
+      features: [
+        "Strong type safety using TypeScript interfaces",
+        "Project and skills showcase with clean UI",
+        "Fast build and hot module replacement powered by Vite",
+        "Fully responsive layout using Tailwind CSS",
+        "Optimized performance and clean component structure",
+      ],
+      liveUrl: "",
+      image: "/images/portfolio.png",
     },
   ];
 
