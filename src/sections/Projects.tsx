@@ -8,7 +8,13 @@ export function Projects() {
       title: "Qoruz App – Influencer Marketing Platform",
       description:
         "Worked on Qoruz’s core B2B application used by brands and agencies to manage influencer campaigns, subscriptions, and performance analytics.",
-      tech: ["React.js", "TypeScript", "JavaScript", "Redux", "REST APIs"],
+      tech: [
+        "React.js",
+        "JavaScript",
+        "Styled Components",
+        "Redux",
+        "REST APIs",
+      ],
       features: [
         "Migrated legacy frontend modules to modern React using hooks",
         "Built and maintained influencer campaign dashboards and analytics",
@@ -52,7 +58,13 @@ export function Projects() {
       title: "YouTube Clone",
       description:
         "A high-fidelity YouTube clone built for a seamless video streaming experience.",
-      tech: ["React.js", "Tailwind CSS", "Redux Toolkit", "YouTube API"],
+      tech: [
+        "React.js",
+        "Tailwind CSS",
+        "Redux Toolkit",
+        "JavaScript",
+        "YouTube API",
+      ],
       features: [
         "Integrated YouTube Data API for real-time video fetching and search",
         "Implemented complex state management using Redux for video playback",
