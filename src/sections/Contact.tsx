@@ -159,7 +159,7 @@ export function Contact() {
               </div>
 
               <motion.a
-                href="public/resume.pdf"
+                href={`${import.meta.env.BASE_URL}resume.pdf`}
                 download
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
