@@ -102,7 +102,7 @@ export function Projects() {
         "Type-safe implementation using TypeScript",
         "Scalable and modular component structure",
       ],
-      liveUrl: "https://zomato-techkumar.vercel.app",
+      liveUrl: "https://zomato-techkumaran.vercel.app/",
       image: "/images/zomoto.png",
     },
     {
@@ -117,7 +117,7 @@ export function Projects() {
         "Responsive UI built with Tailwind CSS",
         "SEO-friendly and scalable Next.js architecture",
       ],
-      liveUrl: "https://e-commerce-product-puce.vercel.app/",
+      liveUrl: "https://product-techkumaran.vercel.app/",
       image: "/images/ecommerce.png",
     },
     {
@@ -132,7 +132,7 @@ export function Projects() {
         "Fully responsive layout using Tailwind CSS",
         "Optimized performance and clean component structure",
       ],
-      liveUrl: "",
+      liveUrl: "https://portfolio-techkumaran.vercel.app/",
       image: "/images/portfolio.png",
     },
   ];
