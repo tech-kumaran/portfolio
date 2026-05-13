@@ -120,21 +120,21 @@ export function Projects() {
       liveUrl: "https://product-techkumaran.vercel.app/",
       image: "/images/ecommerce.png",
     },
-    {
-      title: "Portfolio Website",
-      description:
-        "A modern and responsive developer portfolio website built using TypeScript, Vite, and Tailwind CSS to showcase projects, skills, and experience.",
-      tech: ["TypeScript", "Vite", "Tailwind CSS"],
-      features: [
-        "Strong type safety using TypeScript interfaces",
-        "Project and skills showcase with clean UI",
-        "Fast build and hot module replacement powered by Vite",
-        "Fully responsive layout using Tailwind CSS",
-        "Optimized performance and clean component structure",
-      ],
-      liveUrl: "https://portfolio-techkumaran.vercel.app/",
-      image: "/images/portfolio.png",
-    },
+    // {
+    //   title: "Portfolio Website",
+    //   description:
+    //     "A modern and responsive developer portfolio website built using TypeScript, Vite, and Tailwind CSS to showcase projects, skills, and experience.",
+    //   tech: ["TypeScript", "Vite", "Tailwind CSS"],
+    //   features: [
+    //     "Strong type safety using TypeScript interfaces",
+    //     "Project and skills showcase with clean UI",
+    //     "Fast build and hot module replacement powered by Vite",
+    //     "Fully responsive layout using Tailwind CSS",
+    //     "Optimized performance and clean component structure",
+    //   ],
+    //   liveUrl: "https://portfolio-techkumaran.vercel.app/",
+    //   image: "/images/portfolio.png",
+    // },
   ];
 
   return (
@@ -168,11 +168,20 @@ export function Projects() {
             >
               <motion.div
                 whileHover={{ y: -10 }}
-                className="group relative bg-white/5 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-sm hover:bg-white/10 transition-all duration-500 h-full flex flex-col"
+                role="link"
+                tabIndex={0}
+                onClick={() => window.open(project.liveUrl, "_blank", "noopener,noreferrer")}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    window.open(project.liveUrl, "_blank", "noopener,noreferrer");
+                  }
+                }}
+                className="group relative bg-white/5 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-sm hover:bg-white/10 transition-all duration-500 h-full flex flex-col cursor-pointer"
               >
                 {/* Image Area */}
                 <div className="relative h-56 sm:h-64 overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0b0716] via-transparent to-transparent z-10 opactiy-80" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0b0716] via-transparent to-transparent z-10 opacity-80" />
                   <img
                     src={project.image}
                     alt={project.title}
@@ -183,9 +192,10 @@ export function Projects() {
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-2 bg-black/50 backdrop-blur-md rounded-full text-white hover:bg-accent hover:text-white transition-colors border border-white/10"
+                      // onClick={(e) => e.stopPropagation()}
+                      // className="p-2 bg-black/50 backdrop-blur-md rounded-full text-white hover:bg-accent hover:text-white transition-colors border border-white/10"
                     >
-                      <ArrowUpRight size={20} />
+                      {/* <ArrowUpRight size={20} /> */}
                     </a>
                   </div>
                 </div>
@@ -216,6 +226,7 @@ export function Projects() {
                         href={project.liveUrl}
                         target="_blank"
                         rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
                         className="inline-flex items-center gap-2 text-sm font-bold text-white hover:text-accent transition-colors"
                       >
                         <ExternalLink size={16} />
