@@ -151,7 +151,7 @@ export function Contact() {
                         Phone
                       </p>
                       <p className="text-lg text-white font-bold group-hover:text-purple-400 transition-colors">
-                        +91 86952 66945
+                        +91 86951 66945
                       </p>
                     </div>
                   </a>
